@@ -17,8 +17,8 @@ int main(int argc, char *argv[]){
 	//creates a pointer to another memory location
 	char *flipped = (char*) malloc(sz *sizeof(char));
 	//reverses the code from buffer into flipped
-	for (int j = sz; j >= 0; j--){
-		flipped[count] = buffer[j];
+	for (int j = sz-1; j > 0; j--){
+		flipped[count] = buffer[j-1];
 		count++;
 	}
 	//calls write file
